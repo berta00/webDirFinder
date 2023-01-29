@@ -56,6 +56,7 @@ public class WebDirCrawler {
             Scanner readList = new Scanner(dirList);
             while(readList.hasNext()){
                 // made request
+                System.out.println(readList.nextLine());
                 String currentLine = readList.nextLine();
                 int reqCode = this.dirRequest(currentLine);
                 if(reqCode == 200){
